@@ -76,13 +76,21 @@ export default function Login() {
             </button>
           </form>
 
-          <div style={{ textAlign: 'center', marginTop: 20, paddingTop: 20, borderTop: '1px solid var(--border)' }}>
-            <span style={{ color: 'var(--muted)', fontSize: 13 }}>Are you a student? </span>
-            <button
-              onClick={() => navigate('/student-login')}
-              style={{ color: 'var(--accent)', background: 'none', border: 'none', cursor: 'pointer', fontSize: 13, fontWeight: 600, fontFamily: 'Outfit, sans-serif' }}>
-              Login here →
-            </button>
+          <div style={{ textAlign: 'center', marginTop: 20, paddingTop: 20, borderTop: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: 10 }}>
+            <div>
+              <span style={{ color: 'var(--muted)', fontSize: 13 }}>Are you a student? </span>
+              <button onClick={() => navigate('/student-login')}
+                style={{ color: 'var(--accent)', background: 'none', border: 'none', cursor: 'pointer', fontSize: 13, fontWeight: 600, fontFamily: 'Outfit, sans-serif' }}>
+                Login here →
+              </button>
+            </div>
+            <div>
+              <span style={{ color: 'var(--muted)', fontSize: 13 }}>New admin? </span>
+              <button onClick={() => navigate('/register')}
+                style={{ color: 'var(--accent2)', background: 'none', border: 'none', cursor: 'pointer', fontSize: 13, fontWeight: 600, fontFamily: 'Outfit, sans-serif' }}>
+                Create admin account →
+              </button>
+            </div>
           </div>
         </div>
       </div>

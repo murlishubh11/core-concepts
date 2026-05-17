@@ -241,7 +241,7 @@ function Navbar() {
           Login
         </button>
         <button
-          onClick={() => navigate("/login")}
+          onClick={() => navigate("/student-register")}
           style={{
             background: "#6366f1",
             border: "none",
@@ -390,7 +390,7 @@ function HeroSection() {
         }}
       >
         <button
-          onClick={() => navigate("/login")}
+          onClick={() => navigate("/student-register")}
           style={{
             background: "#6366f1",
             color: "#fff",
@@ -1211,7 +1211,7 @@ function CTASection() {
         </p>
         <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
           <button
-            onClick={() => navigate("/login")}
+            onClick={() => navigate("/student-register")}
             style={{
               background: "#6366f1",
               color: "#fff",
